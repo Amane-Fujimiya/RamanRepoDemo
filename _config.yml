@@ -1,8 +1,28 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
+title: The Raman Project
+description: A wiki repository for everything related to Raman spectroscopy, machine learning, and related spectroscopic method. For use internally.
 theme: just-the-docs
 
 url: https://just-the-docs.github.io
 
 aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
+  This repository: https://github.com/Amane-Fujimiya/RamanRepoDemo
+
+favicon_ico: "/assets/images/favicon.ico"
+
+#color_scheme: dark
+defaults:
+  - scope:
+      path: "docs"  # Applies only to files inside the "docs" folder
+      type: "pages"  # Applies only to pages (not posts or other content)
+    values:
+      layout: "default"  # Sets the default layout for these pages to "default"
+
+# Collection supposition
+collection:
+  journal: 
+    output: true
+just_the_docs:
+  collections:
+    journal:
+      name: Journal
+      nav_fold: true
