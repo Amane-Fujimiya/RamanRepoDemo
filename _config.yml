@@ -2,7 +2,7 @@ title: The Raman Project
 description: A wiki repository for everything related to Raman spectroscopy, machine learning, and related spectroscopic method. For use internally.
 theme: just-the-docs
 
-url: https://just-the-docs.github.io
+#url: https://just-the-docs.github.io
 
 aux_links:
   This repository: https://github.com/Amane-Fujimiya/RamanRepoDemo
@@ -10,6 +10,7 @@ aux_links:
 favicon_ico: "/assets/images/favicon.ico"
 
 #color_scheme: dark
+
 defaults:
   - scope:
       path: "docs"  # Applies only to files inside the "docs" folder
