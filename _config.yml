@@ -9,7 +9,20 @@ aux_links:
 
 favicon_ico: "/assets/images/favicon.ico"
 
-#color_scheme: dark
+color_scheme: dark
+
+# Collection supposition
+collection:
+  journal: 
+    output: true
+    folder: _journal
+
+just_the_docs:
+  collections:
+    journal:
+      name: Journal
+      folder: _journal
+      nav_fold: true
 
 defaults:
   - scope:
@@ -17,13 +30,10 @@ defaults:
       type: "pages"  # Applies only to pages (not posts or other content)
     values:
       layout: "default"  # Sets the default layout for these pages to "default"
+  - scope:
+      path: ""
+      type: "journal"
+    values:
+      layout: "default"
 
-# Collection supposition
-collection:
-  journal: 
-    output: true
-just_the_docs:
-  collections:
-    journal:
-      name: Journal
-      nav_fold: true
+
