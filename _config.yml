@@ -11,29 +11,52 @@ favicon_ico: "/assets/images/favicon.ico"
 
 color_scheme: dark
 
-# Collection supposition
-collection:
-  journal: 
-    output: true
-    folder: _journal
-
-just_the_docs:
-  collections:
-    journal:
-      name: Journal
-      folder: _journal
-      nav_fold: true
-
 defaults:
   - scope:
       path: "docs"  # Applies only to files inside the "docs" folder
       type: "pages"  # Applies only to pages (not posts or other content)
     values:
       layout: "default"  # Sets the default layout for these pages to "default"
-  - scope:
-      path: ""
-      type: "journal"
-    values:
-      layout: "default"
+
+
+
+# Collection supposition
+collections:
+  journal: 
+    output: true
+  raman:
+    output: true
+
+just_the_docs:
+  collections:
+    journal:
+      name: Journal
+      nav_fold: false
+    raman:
+      name: Theory
+      nav_fold: true
+
+callouts_level: quiet # or loud
+callouts:
+  highlight:
+    color: yellow
+  important:
+    title: Important
+    color: blue
+  new:
+    title: New
+    color: green
+  note:
+    title: Note
+    color: purple
+  warning:
+    title: Warning
+    color: red
+
+# Google Analytics Tracking (optional)
+# Supports a CSV of tracking ID strings (eg. "UA-1234567-89,G-1AB234CDE5")
+# Note: the main Just the Docs site does *not* use Google Analytics.
+# ga_tracking: UA-2709176-10,G-5FG1HLH3XQ
+# ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true/nil by default)
 
 
