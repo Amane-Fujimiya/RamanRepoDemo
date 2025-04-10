@@ -11,6 +11,20 @@ favicon_ico: "/assets/images/favicon.ico"
 
 color_scheme: dark
 
+markdown: kramdown
+
+kramdown:
+  footnote_backlink: "&#8617;&#xfe0e;"
+  syntax_highlighter: rouge
+  syntax_highlighter_opts: # Rouge Options › https://github.com/jneen/rouge#full-options
+    css_class: highlight
+    # default_lang: console
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
 defaults:
   - scope:
       path: "docs"  # Applies only to files inside the "docs" folder
@@ -18,7 +32,9 @@ defaults:
     values:
       layout: "default"  # Sets the default layout for these pages to "default"
 
-
+# If you have any plugins, put them here!
+plugins:
+  - jekyll-spaceship
 
 # Collection supposition
 collections:
